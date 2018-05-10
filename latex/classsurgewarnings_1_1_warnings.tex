@@ -215,6 +215,16 @@ For all closed paths. Filter all the points in candidatePoints that are inside t
 
 Parameters
 ----------
+parts : list
+    list of all the closing points of a polygon. It is possible that an administrative boundary can have more than one shapes.
+geom : list
+    list of points that bounds a specific town.
+candidatePoints : list
+    list of all points to be checked if its inside or part of a town.
+paths : list
+    list of all the paths that defines a polygon
+insides : list
+    list of boolean values reflected from candidatePoints. If the value of insides[i] is True then the point candidatePoints[i] is included in a certain polygon.
 
 Returns
 -------\end{DoxyVerb}
@@ -309,6 +319,8 @@ Returns
 
 Parameters
 ----------
+directory : string
+    path to where to place the output file.
 Returns
 -------
 \end{DoxyVerb}
@@ -491,4 +503,4 @@ Returns
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/user/\+Desktop/\+Created\+Modules/surgewarnings/surgewarnings/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}
+C\+:/\+Users/user/\+Desktop/surgewarnings/surgewarnings/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

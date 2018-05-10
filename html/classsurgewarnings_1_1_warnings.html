@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>Storm Surge KML, Warning and Notification Generation Documentation: surgewarnings.Warnings Class Reference</title>
+<title>Storm Surge KML, Warning and Notiﬁcation Generation Documentation: surgewarnings.Warnings Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,10 +23,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Storm Surge KML, Warning and Notification Generation Documentation
-   &#160;<span id="projectnumber">0.0</span>
+   <div id="projectname">Storm Surge KML, Warning and Notiﬁcation Generation Documentation
    </div>
-   <div id="projectbrief">This documentation involves detailed documentation of the classes and methods that are used in km, warning and notification generations.</div>
   </td>
  </tr>
  </tbody>
@@ -425,6 +423,16 @@ For all closed paths. Filter all the points in candidatePoints that are inside t
 
 Parameters
 ----------
+parts : list
+    list of all the closing points of a polygon. It is possible that an administrative boundary can have more than one shapes.
+geom : list
+    list of points that bounds a specific town.
+candidatePoints : list
+    list of all points to be checked if its inside or part of a town.
+paths : list
+    list of all the paths that defines a polygon
+insides : list
+    list of boolean values reflected from candidatePoints. If the value of insides[i] is True then the point candidatePoints[i] is included in a certain polygon.
 
 Returns
 -------</pre> 
@@ -598,6 +606,8 @@ Returns
 
 Parameters
 ----------
+directory : string
+    path to where to place the output file.
 Returns
 -------
 </pre> 
@@ -922,12 +932,12 @@ Returns
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/user/Desktop/CreatedModules/surgewarnings/surgewarnings/__init__.py</li>
+<li>C:/Users/user/Desktop/surgewarnings/surgewarnings/__init__.py</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 27 2018 01:32:43 for Storm Surge KML, Warning and Notification Generation Documentation by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 10 2018 13:23:18 for Storm Surge KML, Warning and Notiﬁcation Generation Documentation by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
